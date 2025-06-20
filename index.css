@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.5);
+    color: rgb(67, 58, 103);
+    text-align: center;
+    padding: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+nav a {
+    color: rgb(207, 86, 127);
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+}
+
+.hero {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    background-color: #ff6f00;
+    color: rgb(1, 7, 26);
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.cta-btn:hover {
+    background-color: #e55f00;
+}
+
+.destinations {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.destinations h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ff6f00;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.destination-card {
+    background: rgba(227, 222, 64, 0.9);
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.destination-card:hover {
+    transform: scale(1.05);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destination-card h3 {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: #ff6f00;
+}
+
+.destination-card .description {
+    padding: 0 1rem 1rem;
+    font-size: 1rem;
+    display: none;
+}
+
+.destination-card.active .description {
+    display: block;
+}
+
+footer {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+footer p {
+    margin: 0.3rem 0;
+}
